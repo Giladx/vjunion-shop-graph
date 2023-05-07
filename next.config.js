@@ -20,6 +20,8 @@ const nextConfig = {
   optimizeFonts: false,
   images: {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    domains:['backend.reachdigital.dev','shop.vjun.io'],
+    minimumCacheTTL: 1500000,
   },
   productionBrowserSourceMaps: true,
   eslint: {
@@ -28,3 +30,5 @@ const nextConfig = {
 }
 
 module.exports = withGraphCommerce(withPWA(nextConfig), __dirname)
+
+

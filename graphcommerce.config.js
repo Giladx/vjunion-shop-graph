@@ -8,6 +8,19 @@ const config = {
   magentoEndpoint: 'https://shop.vjun.io/graphql',
   canonicalBaseUrl: 'https://vjunion-shop.vercel.app',
   storefront: [{ locale: 'en', magentoStoreCode: 'en_US' }],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.example.com',
+        port: '',
+        pathname: '/account123/**',
+      },
+    ],
+  },
 }
+
+
+
 
 module.exports = config
